@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- ATALHO = html:5 [ENTER] ou ! [ENTER] -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+
+    <!-- Fontes
+        https://fonts.google.com/specimen/Press+Start+2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles-->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+ <!--    
+    Browsers such as Chrome request "favicon.ico" by default.
+    If you are working on some site that does not need a favicon, here are some workarounds.
+    add the line: <link rel="icon" href="data:,"> to the head of all your html files.
+    -->
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-time">
+                <h2 style="color: red;">Time</h2>
+                <h2 id="time">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 style="color: red;">Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img src="./src/images/heart.png" width="50%" height="50%"/>
+                <h2 id="lives">3</h2>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-column">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+
+            <div class="panel-column">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+
+            <div class="panel-column">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+
+            <div class="panel-column">
+                <div class="square" id="10"></div>
+                <div class="square" id="11"></div>
+                <div class="square" id="12"></div>
+            </div>
+
+            <div class="panel-column">
+                <div class="square" id="13"></div>
+                <div class="square" id="14"></div>
+                <div class="square" id="15"></div>
+            </div>
+
+        </div>
+
+        <button class="rpgui-button" onclick="window.location.reload()">Reset Game</button>
+		     
+    </div>
+
+
+    <!-- Chamado depois do carregamento da página. -->
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+
+</html>
